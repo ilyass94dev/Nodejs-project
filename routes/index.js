@@ -7,6 +7,10 @@ router.get("/",function(req,res,next)
 {
   res.render("index");
 });
+router.get("/oussama",function(req,res,next)
+{
+  res.send("{'ilyass':'me'}");
+});
 router.get("/user",function(req,res,next)
 {
   res.render("index",{title:global.user});
